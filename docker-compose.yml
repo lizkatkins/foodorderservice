@@ -50,7 +50,7 @@ services:
   foodorderservice:
     image: lizkatkins/foodorderservice-foodorderservice:latest
     container_name: food_order_service
-    restart: "no"
+    restart: always
     networks:
       - kafka-net
     ports:
